@@ -1,1 +1,49 @@
 <p>haiiiiiiiiiii</p>
+
+
+<!-- intercollation -->
+<p>{{user}}</p>
+<p>{{name}}</p>
+
+<!-- property binding -->
+<input type="text" [value]="name"><br>
+
+<!-- event binding -->
+<input type="'text" name="name" id="n" #uname>
+<button (click)="show(uname.value)">click</button>
+
+
+<!-- imgcase -->
+<img src="assets/image/flower.jpeg">
+<img  [src]="img">
+
+<!-- two way binding -->
+<input type="text" name="" id="" [(ngModel)]="myname">
+<button (click)="display()">click</button>
+<p>{{myname}}</p>
+
+<!-- <input type="text" name="" id="" ([ngModel)]="username">
+<input type="text" name="" id="" ([ngModel)]="password">
+<p>{{username}}{{password}}</p> -->
+
+<!-- <input type="text" name="" id="" [(ngModel)]="name1">
+<input type="text" name="" id="" [(ngModel)]="age">
+<input type="text" name="" id="" [(ngModel)]="course">
+<p>{{name1}} </p> -->
+
+
+<!-- attribute styling -->
+
+<div [ngStyle]="{'color':'red'}">welcome</div>
+<div [ngStyle]="{'color':'red','background-color':'yellow'}">welcome</div>
+
+<div [ngClass]="'style1'">welcome</div>
+
+<div [ngClass]="value1">wel</div>
+
+<div [ngClass]="[value2,value3]">welcome</div>
+
+
+
+
+
