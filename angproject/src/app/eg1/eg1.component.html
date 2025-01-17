@@ -44,6 +44,44 @@
 <div [ngClass]="[value2,value3]">welcome</div>
 
 
+<!-- structural directives -->
+<ul  *ngFor="let s of  a; even as e; odd as o; first as f;last as l;index as i;">
+    <li>{{s}} {{e}} {{o}} {{f}} {{l}} {{i}}</li>
+</ul>
+
+<!-- <div *ngIf="data; else elsedata" >welcome</div>
+<ng-template  #elsedata>this is else case</ng-template> -->
+
+<div *ngIf="data;then truecase else falsecase"></div>
+<ng-template #truecase>this is truecase</ng-template>
+<ng-template #falsecase>this is falsecase</ng-template>
 
 
+<div *ngFor="let s of num">
+    <div *ngIf="s%2==0;">{{s}}</div>
+</div><br>
 
+<div *ngFor="let s of num1">
+    <li *ngIf="s>0;">{{s}}</li>
+</div>
+
+
+<div *ngFor="let s of fruits;index as i;">
+   <li>{{i+1}} {{s}}</li>
+</div>
+
+<div *ngFor="let s of person;">
+    <li>name:{{s.name}} course:{{s.course}} age:{{s.age}}</li>
+ </div>
+ 
+       <!-- switch -->
+<div [ngSwitch]="day">
+    <div  *ngSwitchCase="1">mon</div>
+    <div  *ngSwitchCase="2">tue</div>
+    <div  *ngSwitchCase="3">wed</div>
+    <div  *ngSwitchCase="4">thu</div>
+    <div  *ngSwitchCase="5">fri</div>
+    <div  *ngSwitchCase="6">sat</div>
+    <div  *ngSwitchCase="7">sun</div>
+
+</div>

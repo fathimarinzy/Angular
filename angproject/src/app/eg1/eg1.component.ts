@@ -28,5 +28,22 @@ export class Eg1Component {
   value2="style3"
   value3="style4"
 
+  a:string[]=['apple','orange','grapes']
+
+  data:boolean=true
+
+  num:number[]=[1,2,3,4,5,6,7,8,9,10]
+  num1:number[]=[0,1,2,3,4,5,-1,-3,-8,-9,6,7,8,9,10]
+  fruits:string[]=['apple','orange','grapes','mango']
+
+
+   person:any[]=[
+    {"name":'john',"course":'python',"age":25},
+    {"name":'ammu',"course":'java',"age":23},
+    {"name":'anu',"course":'php',"age":24},
+   ]
+
+   day:number=7
+
 
 }

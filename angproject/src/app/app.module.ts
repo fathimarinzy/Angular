@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
 import { Eg1Component } from './eg1/eg1.component';
 import { FormsModule } from '@angular/forms';
+import { Eg2Component } from './eg2/eg2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
-    Eg1Component
+    Eg1Component,
+    Eg2Component
   ],
   imports: [
     BrowserModule,
