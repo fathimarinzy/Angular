@@ -1,0 +1,13 @@
+<p>template  works!</p>
+
+<form #myform=ngForm  (ngSubmit)="show(myform.value)">
+    <input type="text" name="name" id="" placeholder="enter the name" ngModel required  #name="ngModel">
+    <span *ngIf="name.touched&&name.invalid">please enter your name</span>
+    <br><br>
+    <input type="age" name="age" id="" placeholder="enter the age" ngModel required><br><br>
+    <input type="email" name="email" id="" placeholder="enter the name" ngModel required><br><br>
+    <input type="submit" value="submit" [disabled]="myform.invalid">
+
+
+
+</form>

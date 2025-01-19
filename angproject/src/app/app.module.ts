@@ -7,13 +7,21 @@ import { ExampleComponent } from './example/example.component';
 import { Eg1Component } from './eg1/eg1.component';
 import { FormsModule } from '@angular/forms';
 import { Eg2Component } from './eg2/eg2.component';
+import { Pipe1Pipe } from './pipe1.pipe';
+import { Eg3Component } from './eg3/eg3.component';
+import { SenderComponent } from './sender/sender.component';
+import { RecieverComponent } from './reciever/reciever.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     Eg1Component,
-    Eg2Component
+    Eg2Component,
+    Pipe1Pipe,
+    Eg3Component,
+    SenderComponent,
+    RecieverComponent
   ],
   imports: [
     BrowserModule,
