@@ -1,0 +1,94 @@
+<p>angdesign works!</p>
+
+
+<button mat-button>click me</button><br>
+<button mat-button color="accent">click me</button><br>
+<button mat-button color="warn">click me</button><br>
+<button mat-button color="primary">click me</button><br><br>
+
+<button mat-raised-button>click me</button><br>
+<button mat-raised-button color="warn">click me</button><br>
+<button mat-raised-button color="primary">click me</button><br>
+<button mat-raised-button color="accent">click me</button><br><br>
+
+<button mat-flat-button>click me</button><br>
+<button mat-flat-button color="warn">click me</button><br>
+<button mat-flat-button color="primary">click me</button><br>
+<button mat-flat-button color="accent">click me</button><br><br>
+
+
+<button mat-stroked-button>click me</button><br>
+<button mat-stroked-button color="warn">click me</button><br>
+<button mat-stroked-button color="primary">click me</button><br>
+<button mat-stroked-button color="accent">click me</button><br>
+
+<button mat-icon-button><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon></button><br>
+<button mat-icon-button color="warn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+  </svg></button><br>
+<button mat-icon-button color="primary"><img style="border-radius:10px;" src="assets/image/flower.jpeg" ></button><br>
+
+<button mat-icon-button color="accent"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354zM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A24 24 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a9 9 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5z"/>
+  </svg></button><br>
+
+
+
+<button mat-fab>click</button><br>
+<button mat-fab color="warn">click me</button><br>
+<button mat-fab color="primary">click me</button><br>
+<button mat-fab color="accent">click me</button><br>
+
+
+<button mat-mini-fab>click</button><br>
+<button mat-mini-fab color="warn">click me</button><br>
+<button mat-mini-fab color="primary">click me</button><br>
+<button mat-mini-fab color="accent">click me</button><br>
+
+
+<!-- form -->
+
+<form>
+    <!-- <mat-form-field floatlabel="always"> -->
+    <mat-form-field floatlabel="auto" hideRequiredMarker appearance="fill" color="warn" >
+        <mat-label>Name</mat-label>
+        <input matInput required>
+        <mat-hint align="end">5 min characters</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field floatlabel="auto" hideRequiredMarker appearance="outline" color="accent" >
+        <mat-label>Name</mat-label>
+        <input matInput required>
+        <mat-hint align="end">5 min characters</mat-hint><br><br>
+   
+<!--checkbox -->
+        <mat-checkbox>angular</mat-checkbox><br><br>
+        <mat-checkbox labelposition="before">angular</mat-checkbox>
+        <mat-checkbox labelposition="before" color="accent">angular</mat-checkbox>
+        <mat-checkbox labelposition="before" color="warn">angular</mat-checkbox>
+        <mat-checkbox labelposition="before" color="primary">angular</mat-checkbox>
+
+<!-- radiobutton -->
+        <mat-radio-group>
+            <mat-radio-button value="angular">angular</mat-radio-button>
+            <mat-radio-button value="python">python</mat-radio-button>
+            <mat-radio-button value="django">django</mat-radio-button>
+        </mat-radio-group><br><br>
+
+
+<!-- select -->
+        <mat-form-field>
+
+            <mat-label>select</mat-label>
+            <mat-select>
+                <mat-option value="python">python</mat-option>
+                <mat-option value="python">python</mat-option>
+                <mat-option value="python">python</mat-option>
+
+            </mat-select>
+        </mat-form-field>
+
+
+
+    </mat-form-field>
+</form>

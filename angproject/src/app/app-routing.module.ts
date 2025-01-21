@@ -6,6 +6,8 @@ import { Eg2Component } from './eg2/eg2.component';
 import { Eg3Component } from './eg3/eg3.component';
 import { SenderComponent } from './sender/sender.component';
 import { RecieverComponent } from './reciever/reciever.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { AngdesignComponent } from './angdesign/angdesign.component';
 
 const routes: Routes = [
   {path:"first",component:ExampleComponent},
@@ -14,11 +16,8 @@ const routes: Routes = [
   {path:"four",component:Eg3Component},
   {path:"sender",component:SenderComponent},
   {path:"receiver",component:RecieverComponent},
-
-
-
-
-
+  {path:"calculator",component:CalculatorComponent},
+  {path:"angdesign",component:AngdesignComponent}
 
 ];
 

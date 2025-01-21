@@ -9,7 +9,7 @@ import { MediatorService } from '../mediator.service';
 export class SenderComponent {
   show(data:any){
     console.log(data)
-    document.write(JSON.stringify(data))
+    // document.write(JSON.stringify(data))
     this.m.senddata(data)
   }
   constructor(public m:MediatorService){}
