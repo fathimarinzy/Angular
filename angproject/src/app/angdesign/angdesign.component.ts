@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AngdesignComponent {
 
-}
+    displayedColumns: string[] = ['id', 'name'];
+    dataSource = [
+      {id: 1, name: 'John'},
+      {id: 2, name: 'Jane'},
+    
+    ];
+  }
+  
+
