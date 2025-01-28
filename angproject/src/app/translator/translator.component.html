@@ -1,0 +1,22 @@
+<p>translator works!</p>
+
+<button (click)="switchlanguage('en')" mat-flat-button  color="primary" style="margin-right: 10px; margin-left: 1200px;">English</button>
+<button (click)="switchlanguage('ml')" mat-flat-button  color="accent">Malayalam</button><br><br>
+<button (click)="switchlanguage('sp')" mat-flat-button  color="accent">Spanish</button><br><br>
+
+<label for="firstname">{{"First name"| translate}}: </label><br>
+<input type="text" name="name" id="name" required><br><br>
+
+<label for="age">{{"Enter age"|translate}}:</label><br>
+<input type="number" name="age" id="age" required><br><br>
+<!-- 
+<form>:
+    <label for="name">enter your name:</label>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="age">enter your age: </label>
+    <input type="number" name="age" id="age" required><br><br>
+
+    <label for="phone">enter your number:</label>
+    <input type="number" name="phone" id="phone" required><br>
+</form> -->

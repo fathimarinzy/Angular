@@ -1,0 +1,15 @@
+<p>reactiveforms works!</p>
+
+<form [formGroup]=regform (ngSubmit)="save()">
+    <input type="text" name="name" id="" placeholder="enter name"  formControlName="name" required
+    [class.abc]="regform.get('name')?.invalid && regform.get('name')?.touched">
+    <span *ngIf="regform.get('name')?.invalid && regform.get('name')?.touched">pls enter idiot</span><br><br>
+
+    <input type="age" name="age" id="" placeholder="enter age "  formControlName="age" required>
+    <span *ngIf="regform.get('age')?.invalid && regform.get('age')?.touched">pls enter idiot</span><br><br>
+
+    <input type="email" name="email" id="" placeholder="enter email"  formControlName="email" required>
+    <span *ngIf="regform.get('email')?.invalid && regform.get('email')?.touched">pls enter idiot</span><br><br>
+    <input type="submit" value="Submit" [disabled]="regform.invalid">
+
+</form>

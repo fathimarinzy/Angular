@@ -1,0 +1,11 @@
+<p>parent works!</p>
+
+
+<input type="text" name="name" placeholder="Enter your name" #name>
+<button (click)="tochild(name.value)">click</button>
+
+<p>received from child:{{dataEmitter}}</p>
+<app-child  [messagetochild]="messagetochild"
+(dataEmitter)="receive($event)"></app-child>
+
+

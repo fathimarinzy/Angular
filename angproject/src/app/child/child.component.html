@@ -1,0 +1,8 @@
+<p>child works!</p>
+
+<p>received from parent:{{messagetochild}}</p>
+
+
+<input type="text" name="name" placeholder="Enter your name" #name>
+<button (click)="toparent(name.value)">click</button>
+

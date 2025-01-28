@@ -1,0 +1,11 @@
+<p>templatedrivenforms works!</p>
+
+
+<form #myform=ngForm (ngSubmit)="show(myform.value)">
+    <input type="text" name="name" id="" placeholder="enter name" ngModel required #name="ngModel">
+    <span *ngIf="name.touched&&name.invalid">pls enter idiot</span><br><br>
+    <input type="age" name="age" id="" placeholder="enter age" ngModel required #age="ngModel">
+    <span *ngIf="age.touched&&age.invalid"> enter age</span><br><br>
+    <input type="email" name="email" id="" placeholder="enter mail" ngModel required><br><br>
+    <input type="submit" value="submit" [disabled]="myform.invalid">
+</form>
